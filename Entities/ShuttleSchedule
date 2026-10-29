@@ -1,0 +1,69 @@
+{
+  "name": "ShuttleSchedule",
+  "type": "object",
+  "properties": {
+    "shuttle_id": {
+      "type": "string",
+      "description": "Reference to shuttle"
+    },
+    "route_name": {
+      "type": "string",
+      "description": "Name of the route (e.g., Main Campus to Dorms)"
+    },
+    "origin": {
+      "type": "string",
+      "description": "Starting point"
+    },
+    "destination": {
+      "type": "string",
+      "description": "End point"
+    },
+    "stops": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Intermediate stops"
+    },
+    "departure_time": {
+      "type": "string",
+      "description": "Scheduled departure time (HH:MM)"
+    },
+    "arrival_time": {
+      "type": "string",
+      "description": "Expected arrival time (HH:MM)"
+    },
+    "days_of_operation": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Days when this schedule runs"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "cancelled",
+        "delayed"
+      ],
+      "default": "active"
+    },
+    "available_seats": {
+      "type": "number",
+      "description": "Current available seats"
+    },
+    "price": {
+      "type": "number",
+      "description": "Fare for the route"
+    }
+  },
+  "required": [
+    "shuttle_id",
+    "route_name",
+    "origin",
+    "destination",
+    "departure_time",
+    "arrival_time"
+  ]
+}

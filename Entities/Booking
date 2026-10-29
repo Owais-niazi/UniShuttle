@@ -1,0 +1,72 @@
+{
+  "name": "Booking",
+  "type": "object",
+  "properties": {
+    "booking_id": {
+      "type": "string",
+      "description": "Unique booking reference"
+    },
+    "student_email": {
+      "type": "string",
+      "description": "Email of the student who booked"
+    },
+    "student_name": {
+      "type": "string",
+      "description": "Name of the student"
+    },
+    "schedule_id": {
+      "type": "string",
+      "description": "Reference to shuttle schedule"
+    },
+    "shuttle_id": {
+      "type": "string",
+      "description": "Reference to shuttle"
+    },
+    "route_name": {
+      "type": "string",
+      "description": "Name of the booked route"
+    },
+    "travel_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of travel"
+    },
+    "boarding_point": {
+      "type": "string",
+      "description": "Where student will board"
+    },
+    "drop_point": {
+      "type": "string",
+      "description": "Where student will alight"
+    },
+    "seats_booked": {
+      "type": "number",
+      "default": 1,
+      "description": "Number of seats booked"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "cancelled",
+        "completed",
+        "no_show"
+      ],
+      "default": "confirmed"
+    },
+    "booking_time": {
+      "type": "string",
+      "description": "When the booking was made"
+    },
+    "cancellation_reason": {
+      "type": "string",
+      "description": "Reason if cancelled"
+    }
+  },
+  "required": [
+    "booking_id",
+    "student_email",
+    "schedule_id",
+    "travel_date"
+  ]
+}

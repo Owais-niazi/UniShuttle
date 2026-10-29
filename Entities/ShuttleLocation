@@ -1,0 +1,41 @@
+{
+  "name": "ShuttleLocation",
+  "type": "object",
+  "properties": {
+    "shuttle_id": {
+      "type": "string",
+      "description": "Reference to the shuttle"
+    },
+    "latitude": {
+      "type": "number",
+      "description": "Current latitude coordinate"
+    },
+    "longitude": {
+      "type": "number",
+      "description": "Current longitude coordinate"
+    },
+    "speed": {
+      "type": "number",
+      "description": "Speed in km/h"
+    },
+    "heading": {
+      "type": "number",
+      "description": "Direction in degrees (0-360)"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "moving",
+        "stopped",
+        "idle"
+      ],
+      "default": "idle",
+      "description": "Current movement status"
+    }
+  },
+  "required": [
+    "shuttle_id",
+    "latitude",
+    "longitude"
+  ]
+}

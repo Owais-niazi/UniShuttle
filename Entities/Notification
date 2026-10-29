@@ -1,0 +1,43 @@
+{
+  "name": "Notification",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Recipient email"
+    },
+    "title": {
+      "type": "string",
+      "description": "Notification title"
+    },
+    "message": {
+      "type": "string",
+      "description": "Notification content"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "booking_confirmed",
+        "booking_cancelled",
+        "schedule_update",
+        "reminder",
+        "system"
+      ],
+      "description": "Type of notification"
+    },
+    "is_read": {
+      "type": "boolean",
+      "default": false
+    },
+    "related_booking_id": {
+      "type": "string",
+      "description": "Related booking if applicable"
+    }
+  },
+  "required": [
+    "user_email",
+    "title",
+    "message",
+    "type"
+  ]
+}

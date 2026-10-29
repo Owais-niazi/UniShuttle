@@ -1,0 +1,49 @@
+{
+  "name": "Shuttle",
+  "type": "object",
+  "properties": {
+    "shuttle_number": {
+      "type": "string",
+      "description": "Unique identifier for the shuttle (e.g., SH-001)"
+    },
+    "name": {
+      "type": "string",
+      "description": "Shuttle name (e.g., Campus Express)"
+    },
+    "capacity": {
+      "type": "number",
+      "description": "Total seat capacity"
+    },
+    "vehicle_type": {
+      "type": "string",
+      "enum": [
+        "mini_bus",
+        "standard_bus",
+        "large_bus"
+      ],
+      "description": "Type of vehicle"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "maintenance",
+        "retired"
+      ],
+      "default": "active"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Features like AC, WiFi, etc."
+    }
+  },
+  "required": [
+    "shuttle_number",
+    "name",
+    "capacity",
+    "vehicle_type"
+  ]
+}
