@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { base44 } from '@/api/base44Client';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Badge } from "@/components/ui/badge";
-import { Skeleton } from "@/components/ui/skeleton";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/Components/ui/button";
+import { Input } from "@/Components/ui/input";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/Components/ui/tabs";
+import { Badge } from "@/Components/ui/badge";
+import { Skeleton } from "@/Components/ui/skeleton";
+import { Card, CardContent, CardHeader, CardTitle } from "@/Components/ui/card";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "@/Components/ui/select";
 import { 
   Bus, 
   Search, 
@@ -26,11 +26,11 @@ import {
 } from 'lucide-react';
 import { format } from 'date-fns';
 import { motion, AnimatePresence } from 'framer-motion';
-import ShuttleCard from '@/components/shuttle/ShuttleCard';
-import BookingModal from '@/components/shuttle/BookingModal';
-import BookingCard from '@/components/shuttle/BookingCard';
-import NotificationBell from '@/components/shuttle/NotificationBell';
-import LiveShuttleMap from '@/components/map/LiveShuttleMap';
+import ShuttleCard from '@/Components/shuttle/ShuttleCard';
+import BookingModal from '@/Components/shuttle/BookingModal';
+import BookingCard from '@/Components/shuttle/BookingCard';
+import NotificationBell from '@/Components/shuttle/NotificationBell';
+import LiveShuttleMap from '@/Components/map/LiveShuttleMap';
 
 export default function StudentDashboard() {
   const [user, setUser] = useState(null);

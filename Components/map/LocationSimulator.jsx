@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { base44 } from '@/api/base44Client';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/Components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/Components/ui/card';
 import { useMutation, useQueryClient, useQuery } from '@tanstack/react-query';
 import { Play, Square, RefreshCw } from 'lucide-react';
 import { toast } from 'sonner';

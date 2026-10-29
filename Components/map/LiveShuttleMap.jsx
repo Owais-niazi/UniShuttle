@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup, Tooltip } from 'react-leaflet';
 import { base44 } from '@/api/base44Client';
 import { useQuery } from '@tanstack/react-query';
 import { Bus, Navigation, Gauge } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
+import { Badge } from '@/Components/ui/badge';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 

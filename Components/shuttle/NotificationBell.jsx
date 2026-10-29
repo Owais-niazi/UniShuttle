@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Button } from "@/components/ui/button";
+import { Button } from "@/Components/ui/button";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
-import { ScrollArea } from "@/components/ui/scroll-area";
+} from "@/Components/ui/popover";
+import { ScrollArea } from "@/Components/ui/scroll-area";
 import { Bell, CheckCircle, XCircle, AlertCircle, Clock, Check } from 'lucide-react';
 import { format } from 'date-fns';
 import { motion, AnimatePresence } from 'framer-motion';

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { base44 } from '@/api/base44Client';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/Components/ui/button";
+import { Input } from "@/Components/ui/input";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/Components/ui/tabs";
+import { Badge } from "@/Components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/Components/ui/card";
 import {
   Table,
   TableBody,
@@ -13,7 +13,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
+} from "@/Components/ui/table";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -23,8 +23,8 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-} from "@/components/ui/alert-dialog";
-import { Skeleton } from "@/components/ui/skeleton";
+} from "@/Components/ui/alert-dialog";
+import { Skeleton } from "@/Components/ui/skeleton";
 import { 
   Bus, 
   Calendar,
@@ -42,11 +42,11 @@ import {
 } from 'lucide-react';
 import { format } from 'date-fns';
 import { motion } from 'framer-motion';
-import StatsCard from '@/components/admin/StatsCard';
-import ScheduleForm from '@/components/admin/ScheduleForm';
-import ShuttleForm from '@/components/admin/ShuttleForm';
-import LiveShuttleMap from '@/components/map/LiveShuttleMap';
-import LocationSimulator from '@/components/map/LocationSimulator';
+import StatsCard from '@/Components/admin/StatsCard';
+import ScheduleForm from '@/Components/admin/ScheduleForm';
+import ShuttleForm from '@/Components/admin/ShuttleForm';
+import LiveShuttleMap from '@/Components/map/LiveShuttleMap';
+import LocationSimulator from '@/Components/map/LocationSimulator';
 
 export default function AdminDashboard() {
   const [user, setUser] = useState(null);
